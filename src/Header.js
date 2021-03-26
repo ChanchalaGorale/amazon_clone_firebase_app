@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { auth } from "./firebase";
 
 function Header() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket, user }] = useStateValue();
 
   const basketitems = basket?.length;
 
